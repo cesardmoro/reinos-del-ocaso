@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName t_sellddm1
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 19/12/2005 02:56:05 p.m.
+//:://////////////////////////////////////////////
+void main()
+{
+
+    // Quitar algo de oro al jugador
+    TakeGoldFromCreature(100, GetPCSpeaker(), TRUE);
+    // Dar los objetos al que habla
+    CreateItemOnObject("pasajeddm", GetPCSpeaker(), 1);
+
+}

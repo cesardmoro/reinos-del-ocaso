@@ -1,0 +1,22 @@
+/************* Script Generador de Encuentros - Variado ***************
+template author: Inquisidor
+script name: sgeBenzorFarms
+script author: Lobofiel
+names of the areas this script is asociated with:
+Granjas de Benzor (3)
+********************************************************************************/
+#include "RS_FGE_inc"
+
+void main() {
+    struct RS_DatosSGE datosSGE = RS_getDatosSGE();
+    int selector = Random(10);
+    if( selector==0 )
+        RS_generarGrupo( datosSGE, FGE_NPC_mercenary_get() );
+    else if( selector<=2 )
+        RS_generarGrupo( datosSGE, ADE_NPC_Bandits_get() );
+    else if( GetIsDay() )
+        RS_generarMezclado( datosSGE, FGE_Animal_BosqueDiurno_getVariado() );
+    else
+        RS_generarMezclado( datosSGE, FGE_Animal_BosqueNocturno_getVariado() );
+
+}

@@ -1,0 +1,21 @@
+//::///////////////////////////////////////////////
+//:: Ability Damage monitor thread
+//:: prc_abil_monitor
+//:://////////////////////////////////////////////
+/*
+    Just does a call to AbilityDamageMonitor()
+    in inc_abil_damage.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Ornedan
+//:: Created On: 09.04.2005
+//:://////////////////////////////////////////////
+
+#include "prc_alterations"
+#include "inc_abil_damage"
+
+
+void main()
+{
+    AbilityDamageMonitor();
+}

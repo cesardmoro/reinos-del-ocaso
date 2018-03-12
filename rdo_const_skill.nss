@@ -1,0 +1,41 @@
+const int SKILL_JUMP                = 27;
+const int SKILL_BALANCE             = 28;
+const int SKILL_CLIMB               = 29;
+const int SKILL_DESCIPHER           = 30;
+const int SKILL_DISGUISE            = 31;
+const int SKILL_ESCAPE_ARTIST       = 32;
+const int SKILL_GATHER_INF          = 33;
+const int SKILL_HANDLE_ANIMAL       = 34;
+const int SKILL_PROFESSION          = 35;
+//const int SKILL_RIDE                = 36;
+const int RDO_SKILL_RIDE            = 36;
+const int SKILL_SENSE_MOTIVE        = 37;
+const int SKILL_LANGUAGE            = 38;
+const int SKILL_SURVIVAL            = 39;
+const int SKILL_SWIM                = 40;
+const int SKILL_USE_ROPE            = 41;
+const int SKILL_SLEIGHT_OF_HAND     = 42;
+const int SKILL_LORE_ARCANA         = 43;
+const int SKILL_LORE_ARCHITECTURE   = 44;
+const int SKILL_LORE_DUNGEONEERING  = 45;
+const int SKILL_LORE_GEOGRAPHY      = 46;
+const int SKILL_LORE_HISTORY        = 47;
+const int SKILL_LORE_LOCAL          = 48;
+const int SKILL_LORE_NATURE         = 49;
+const int SKILL_LORE_NOBILITY       = 50;
+const int SKILL_LORE_RELIGION       = 51;
+const int SKILL_LORE_PLANES         = 52;
+
+const int SKILL_CHECK_PENALTY_SMALL_SHIELD = 1;
+const int SKILL_CHECK_PENALTY_LARGE_SHIELD = 2;
+const int SKILL_CHECK_PENALTY_TOWER_SHIELD = 10;
+
+const int SKILL_CHECK_PENALTY_PADDED_ARMOR          = 0;
+const int SKILL_CHECK_PENALTY_LEATHER_ARMOR         = 0;
+const int SKILL_CHECK_PENALTY_STUDDED_ARMOR         = 1;
+const int SKILL_CHECK_PENALTY_CHAINSHIRT_ARMOR      = 2;
+const int SKILL_CHECK_PENALTY_BREASTPLATE_ARMOR     = 4;
+const int SKILL_CHECK_PENALTY_SPLINTMAIL_ARMOR      = 6;
+const int SKILL_CHECK_PENALTY_HALFPLATE_ARMOR       = 7;
+const int SKILL_CHECK_PENALTY_FULLPLATE_ARMOR       = 6;
+

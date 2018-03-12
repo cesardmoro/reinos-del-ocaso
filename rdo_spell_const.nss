@@ -1,0 +1,15 @@
+const int SPELL_FLY                     = 3302;
+
+const int SPELL_CONTROL_WEATHER         = 3304;
+const int SPELL_CONTROL_WEATHER_CLEAR   = 3315;
+const int SPELL_CONTROL_WEATHER_RAIN    = 3316;
+const int SPELL_CONTROL_WEATHER_STORM   = 3317;
+const int SPELL_CONTROL_WEATHER_SNOW    = 3318;
+
+const int SPELL_ELEMENTAL_SHIELD_FIRE   = 3301;
+const int SPELL_ELEMENTAL_SHIELD_COLD   = 3300;
+const int VFX_DUR_CHILL_SHIELD          = 865;
+
+const int SPELL_TRUE_RESURRECTION       = 3308;
+
+const int SPELL_INSPIRATIONAL_BOOST     = 3319;

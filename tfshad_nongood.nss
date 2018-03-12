@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName tfshad_nongood
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 6/13/2004 1:05:49 PM
+//:://////////////////////////////////////////////
+int StartingConditional()
+{
+
+	// Restrict based on the player's alignment
+	if(GetAlignmentGoodEvil(GetPCSpeaker()) != ALIGNMENT_GOOD)
+		return FALSE;
+
+	return TRUE;
+}

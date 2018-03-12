@@ -1,0 +1,20 @@
+//::///////////////////////////////////////////////
+//:: Slayer of Domiel Detect Evil
+//:: prc_sod_dtctevil.nss
+//::///////////////////////////////////////////////
+/*
+    Detect Evil as the spell, at will 
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Stratovarius
+//:: Created On: 27.2.2006
+//:://////////////////////////////////////////////
+
+#include "prc_alterations"
+
+void main()
+{
+    object oPC = OBJECT_SELF;
+    // That was easy
+    ActionCastSpell(SPELL_DETECT_EVIL);
+}

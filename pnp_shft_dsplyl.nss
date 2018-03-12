@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName sc_001
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 30/08/2004 11:08:45 PM
+//:://////////////////////////////////////////////
+#include "pnp_shft_main"
+
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!GetHasFeat(FEAT_PRESTIGE_SHIFTER_GWSHAPE_1,GetPCSpeaker()))
+        return FALSE;
+
+    return TRUE;
+}
