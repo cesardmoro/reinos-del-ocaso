@@ -446,7 +446,8 @@ void ExecDeathActions(object matador, object pjMatado)
     //si lo envian al fugue
     else
     {
-        SisPremioCombate_quitarPorcentajeXpTransitoria( pjMatado, 100 );
+        //Plantiemos otra opción, que no pierda la xp al morir, sino al revivir.
+        //SisPremioCombate_quitarPorcentajeXpTransitoria( pjMatado, 100 );
 
         int crearCadaver = !GetLocalInt(pjMatado, RdO_NO_CREAR_CADAVER_AL_MORIR );
 
@@ -561,10 +562,16 @@ void Muerte_onPjEntersArea( object pj ) {
 
         // aplicar castigos al PJ dependientes de como sea revivido
         int condicionResurreccion = GetLocalInt(pj, Muerte_condicionResurreccion_VN );
+        SendMessageToPC( OBJECT_SELF, "Debug: condicionResurreccion:" + condicionResurreccion );
+
         if( condicionResurreccion == Muerte_REVIVIDO_CON_RAISE_DEAD) {
             ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectDamage(GetCurrentHitPoints(pj)-1), pj);
             AssignCommand( pj, ActionPlayAnimation( ANIMATION_LOOPING_DEAD_BACK, 10.0, 18.0 ) );
+            SisPremioCombate_quitarPorcentajeXpTransitoria( pj, 50 );
         }
+        if(condicionResurreccion == Muerte_REVIVIDO_CON_RESURRECTION)
+            SisPremioCombate_quitarPorcentajeXpTransitoria( pj, 25 );
+
         if( condicionResurreccion != Muerte_REVIVIDO_CON_TRUERESURRECTION )
             AssignCommand( pj, consumirTodosLosConjuros() );
 

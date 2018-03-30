@@ -122,6 +122,8 @@ void ajustarPenaEspera( string pcId, object oPC )
         int frecuencia = 2592000 / intervaloEntrePerdonesSuavizado; // 2592000 = segundos en un mes (de 30 dias)
         SendMessageToPC(oPC, "El tiempo transcurrido desde la última vez que la vida de tu personaje fue perdonada es de " + minutesToText(minutosDesdeUltimoPerdon) + " reales, y la taza de perdones es " + IntToString( frecuencia ) + " veces por mes (30 dias reales).");
      }
+     //Agregamos la perdida del 100% de xp al revivir del fuge
+     SisPremioCombate_quitarPorcentajeXpTransitoria( pj, 100 );
      //return mensaje;
 }
 
